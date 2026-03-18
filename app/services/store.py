@@ -11,6 +11,7 @@ import uvicorn
 
 
 from app.database.config import get_connection
+from app.middleware import add_cors
 
 
 # STARTUP — test connection when service starts
@@ -28,6 +29,7 @@ async def lifespan(app: FastAPI):
     print("Store service shutting down")
 
 app = FastAPI(lifespan=lifespan)
+add_cors(app)
 
 # MODELS
 

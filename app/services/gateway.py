@@ -1,9 +1,11 @@
 from fastapi import FastAPI
 import uvicorn
 from app.routes import ingest, search
+from app.middleware import add_cors
 
 
 app = FastAPI()
+add_cors(app)
 
 @app.get("/health")
 def health():

@@ -1,6 +1,6 @@
 # VerdictAI ⚖️
 
-A production-grade Legal RAG (Retrieval-Augmented Generation) system for searching and querying Indian court judgments using semantic search, hybrid metadata filtering, and local LLM-powered answers.
+A Legal RAG (Retrieval-Augmented Generation) system for searching and querying Indian court judgments using semantic search, hybrid metadata filtering, and local LLM-powered answers.
 
 ---
 

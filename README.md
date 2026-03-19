@@ -348,12 +348,26 @@ GET http://localhost:8004/health   # search
 
 ---
 
-## Dataset Format
+## Dataset
 
-Built for Indian court judgment JSONs with the following structure. Each file contains the full judgment text and extracted metadata. Tested with 834 real High Court and Supreme Court judgments.
+This project is built for the **JITS Legal Dataset** — a collection of Indian court judgments (High Court + Supreme Court) in structured JSON format.
+
+**Dataset:** [Viverun/jits-legal-dataset](https://huggingface.co/datasets/Viverun/jits-legal-dataset)
+```bash
+git clone https://huggingface.co/datasets/Viverun/jits-legal-dataset
+```
+
+Each file contains:
+- Full judgment text
+- Extracted metadata (court, bench, date, jurisdiction)
+- Auto-classified domain (service, civil, criminal, mixed)
+- Extracted citations and legal sections
+
+Tested with 834 judgments from High Courts and Supreme Court of India.
 
 Supported domains: `service`, `civil`, `criminal`, `mixed`
 Supported court levels: `HC` (High Court), `SC` (Supreme Court)
+```
 
 ---
 
